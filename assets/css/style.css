@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Scada&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #001F32;
+    font-family: 'Scada', sans-serif;
+    color: #f5efed;
+    font-weight: 400;
+    position: relative;
+}
