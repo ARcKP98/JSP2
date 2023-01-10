@@ -58,4 +58,22 @@ em {
   box-shadow: 2px;
 } /*optional code*/
 
+.rules-btn {
+  display: block; /*Maybe switch to flex?*/
+  padding: 15px 33px;
+  margin: 23px auto;
+  border-radius: 6px;
+  background-color: whitesmoke;
+  color: black;
+}
+.rules-btn:hover {
+  color: #f5efed;
+  background-color: #CABB71;
+}
+
+.rules-btn:active {
+  background-color: #98CE00;
+  box-shadow: 2px;
+}
+
 
