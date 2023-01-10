@@ -15,10 +15,15 @@
     <title>The Marvelous Quiz</title>
 </head>
 <body>
+    <main>
     <h1>The Marvelous Quiz</h1>
     <h3>Welcome to the quiz that tests your knowledge about the <em>Marvel Cinematic Universe</em></h3>
     <br>
     <section id = "game-box-welcome" class="game-box-welcome">
+        <div id="sound-level">
+            <i class="fa-solid fa-volume-xmark audio-mute"></i> 
+            <i class="fa-solid fa-volume-high audio-full"></i> 
+        </div>
         <div id="main-menu">
             <h3>Pick your difficulty to start the game</h3>
             <button id='level-easy-btn' class="level-btn">Easy</button>
@@ -26,9 +31,17 @@
             <button id='level-hard-btn' class="level-btn">Hard</button>
         </div>
     </section>
+    <section id = "rules-modal" class="rules-modal">
+        <div style="background-color: red;">
+            <h3>Here are the Rules:</h3>
+
+        </div>
+    </section>
     <div id="main-menu">
         <button id='rules-btn' class="rules-btn">Rules</button>
     </div>
     <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/9c53ea3530.js" crossorigin="anonymous"></script>
 </body>
+</main>
 </html>

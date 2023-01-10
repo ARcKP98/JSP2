@@ -12,7 +12,6 @@ body {
     font-family: 'Scada', sans-serif;
     color: #f5efed;
     font-weight: 400;
-    position: relative;
 }
 h1 {
   font-family: 'Aldrich', sans-serif;
@@ -75,5 +74,8 @@ em {
   background-color: #98CE00;
   box-shadow: 2px;
 }
-
+#sound-level {
+  display: flex;
+  justify-content: flex-end;
+}
 
