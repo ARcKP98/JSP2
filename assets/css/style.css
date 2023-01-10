@@ -39,6 +39,23 @@ em {
   max-height: 550px;
   padding: 5%;
 }
+.level-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 33px;
+  border-radius: 6px;
+  color: #f5efed;
+  background-color: #001F32;
+}
 
+.level-btn:hover {
+  color: #f5efed;
+  background-color: #CABB71;
+}
+
+.level-btn:active {
+  background-color: #98CE00;
+  box-shadow: 2px;
+} /*optional code*/
 
 
