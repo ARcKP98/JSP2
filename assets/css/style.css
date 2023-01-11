@@ -89,10 +89,10 @@ em {
   max-height: 550px;
   padding: 5%;
 }
-.rules-modal, h3 {
+.rules-modal h3 {
   margin-bottom: 12px;
 }
-.rules-modal, li {
+.rules-modal li {
   list-style-type: square;
   text-align: center;
   padding-bottom: 19px;
