@@ -117,8 +117,7 @@ em {
 }
 #answer-options {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(2, 1fr); */
+  grid-template-columns: repeat(2, auto);
   justify-items: center;
 }
 .answer-btn {
@@ -171,10 +170,10 @@ margin: 9px;
 #points, #correct, #incorrect, #score{
   padding-left: 7px;
 }
-/* .img-container{
+/* #img-container{
   margin-top: 3rem;
-  grid-template-areas: none;
-  grid-template-columns: 2fr, 1;
+  display: grid;
+  grid-template-columns: 2fr, auto;
 } */
 /* .finish-message {
   display: flex;
@@ -194,10 +193,18 @@ margin: 9px;
   font-size: 23px;
 }
 .retry{
-  display:flex;
-  justify-content: center;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10%;
 }
+
 .retry-btn {
   padding: 20px;
-  width: 30vw;
+  width: 30%;
+  margin-top: 9px;
+}
+.retry-btn:hover {
+  background-color: #CABB71;
+  color: black;
+  border: 2px solid black;
 }
