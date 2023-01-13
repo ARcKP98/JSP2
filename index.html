@@ -31,7 +31,7 @@
             <button id='level-hard-btn' class="level-btn">Hard</button>
         </div>
     </section>
-    <section id = "rules-modal" class="rules-modal hide">
+    <section id = "rules-modal" class="rules-modal">
         <div>
             <h3>Here are the Rules:</h3>
         </div>
@@ -43,7 +43,7 @@
             </ul>
         </div>
     </section>
-    <section class="question-area">
+    <section class="question-area" id="question-box">
         
         <div>
             <h4 id = "question" class="question-text">A question should be here</h4>
@@ -71,13 +71,22 @@
                 <div id="incorrect">0</div>
             </div>
         </div>
+    </section>
         <!-- <div>
             <button id="next-btn" class="next">Next</button>
         </div> -->
-    </section>
     <section id="result-section" class="result-box">
         <div class="finish-message">
             <h3>Congratulations on finishing the quiz!</h3>
+            <div class="score-msg">
+                <h4>You got a score of <h4 id="score">0</h4></h4>
+            </div>
+        </div>
+        <div class="img-container profile">
+            <!-- <img src="/assets/images/stanl.webp" class="profile" alt="stan's pic"> -->
+        </div>
+        <div class="retry">
+            <button class="retry-btn" id="play-again">Play Again</button>
         </div>
     </section>
     <div id="main-menu">
