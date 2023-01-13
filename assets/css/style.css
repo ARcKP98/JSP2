@@ -53,6 +53,7 @@ em {
   color: #f5efed;
   background-color: #CABB71;
   border: 2px solid black;
+  cursor: pointer;
 }
 
 .level-btn:active {
@@ -73,6 +74,7 @@ em {
   color: #f5efed;
   background-color: #CABB71;
   border: 2px solid black;
+  cursor: pointer;
 }
 
 .rules-btn:active {
@@ -133,8 +135,11 @@ margin: 9px;
   background-color: #CABB71;
   color: black;
   border: 3px solid black;
+  cursor: pointer;
 }
-
+.game-box-welcome i {
+  cursor: pointer;
+}
 .next {
   background-color: #041520;
   color: #f5efed;
@@ -147,6 +152,7 @@ margin: 9px;
 .next:hover {
   background-color: #CABB71;
   color: black;
+  cursor: pointer;
 }
 
 .result-box {
@@ -207,4 +213,5 @@ margin: 9px;
   background-color: #CABB71;
   color: black;
   border: 2px solid black;
+  cursor: pointer;
 }
