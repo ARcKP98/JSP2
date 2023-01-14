@@ -109,7 +109,7 @@ em {
   margin: 0 auto;
   border-radius: 6px;
   width: 90%;
-  height: 460px;
+  height: 500px;
   max-height: 550px;
   padding: 5%;
 }
@@ -175,6 +175,15 @@ margin: 9px;
 }
 #points, #correct, #incorrect, #score{
   padding-left: 7px;
+}
+#progressBar {
+  border: 0.3rem solid white;
+  width: 23rem;
+  height: 3.5vh;
+}
+#progress-bar-full {
+  height: 2.5vh;
+  background-color: green;
 }
 /* #img-container{
   margin-top: 3rem;
