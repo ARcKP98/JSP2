@@ -122,7 +122,7 @@ em {
   grid-template-columns: repeat(2, auto);
   justify-items: center;
 }
-.answer-btn {
+.answer-button {
 width: 70%;
 height: 5rem;
 padding: 20px;
@@ -131,7 +131,7 @@ margin: 9px;
 .hide {
   display: none;
 }
-.answer-btn:hover {
+.answer-button:hover {
   background-color: #CABB71;
   color: black;
   border: 3px solid black;
