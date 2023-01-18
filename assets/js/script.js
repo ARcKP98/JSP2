@@ -3,7 +3,7 @@ const welcomeBox = document.getElementById("game-box-welcome");
 const levelButton1 = document.getElementById("level-easy-btn");
 const levelButton2 = document.getElementById("level-medium-btn");
 const levelButton3 = document.getElementById("level-hard-btn");
-const rulesBox = document.getElementById("rules");
+const rulesBox = document.getElementById("rules-modal");
 const rulesButton = document.getElementById("rules-btn");
 const rulesBoxClose = document.getElementById("close-rules-btn")
 const mainGame = document.getElementById("question-box");
@@ -23,6 +23,17 @@ const finalScore = document.getElementById("score");
 const retryButton = document.getElementById("retry-btn");
 const homeButton = document.getElementById("home-btn");
 
+//Toggling betwen the rules section and the home screen. 
+rulesButton.addEventListener('click', () => {
+    welcomeBox.classList.add("hide");
+    rulesBox.classList.remove("hide");
+    rulesButton.classList.add("hide");
+});
+rulesBoxClose.addEventListener('click', () => {
+    welcomeBox.classList.remove("hide"); 
+    rulesBox.classList.add("hide");
+    rulesButton.classList.remove("hide");
+})
 
 
 
