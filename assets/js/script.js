@@ -5,6 +5,7 @@ const levelButton2 = document.getElementById("level-medium-btn");
 const levelButton3 = document.getElementById("level-hard-btn");
 const rulesBox = document.getElementById("rules");
 const rulesButton = document.getElementById("rules-btn");
+const rulesBoxClose = document.getElementById("close-rules-btn")
 const mainGame = document.getElementById("question-box");
 const questionSpace = document.getElementById("question");
 const answerSpace = document.getElementById("answer-options");

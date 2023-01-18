@@ -32,7 +32,7 @@
             <button id='level-hard-btn' class="level-btn" aria-label="hard difficulty button">Hard</button>
         </div>
     </section>
-    <section id = "rules-modal" class="rules-modal">
+    <section id = "rules-modal" class="rules-modal hide">
         <div>
             <h3>Here are the Rules:</h3>
         </div>
@@ -42,9 +42,10 @@
                 <li>You get 10 points for every correct answer and you loose 2 points for every wrong answer.</li>
                 <li>The quiz contains questions reagrding the Marvel <i>Cinematic</i> universe, so when answering questions keep this in mind.</li>
             </ul>
+            <button id="close-rules-btn" class="rules-btn">Understood</button>
         </div>
     </section>
-    <section class="question-area" id="question-box">
+    <section class="question-area hide" id="question-box">
         
         <div>
             <h4 id = "question" class="question-text">A question should be here</h4>
@@ -61,15 +62,15 @@
         <div class="score-keep">
             <div class="point-value">
                 <h4>Score:</h4>
-                <div id="points">0</div>
+                <span id="points">0</span>
             </div>
             <div class="correct-ans">
                 <h4>Correct:</h4>
-                <div id="correct">0</div>
+                <span id="correct">0</span>
             </div>
             <div class="incorrect-ans">
                 <h4>Incorrect:</h4>
-                <div id="incorrect">0</div>
+                <span id="incorrect">0</span>
             </div>
             <!-- <div id="progressBar">
                 <div id="progress-bar-full"></div>
@@ -82,11 +83,11 @@
         <!-- <div>
             <button id="next-btn" class="next">Next</button>
         </div> -->
-    <section id="result-section" class="result-box">
+    <section id="result-section" class="result-box hide">
         <div class="finish-message">
             <h3>Congratulations on finishing the quiz!</h3>
             <div class="score-msg">
-                <h4>You got a score of <h4 id="score">0</h4></h4>
+                <h4>You got a score of <span id="score">0</span></h4>
             </div>
         </div>
         <div class="profile">
@@ -103,7 +104,7 @@
 
     <!-- JavaScript links -->
     <script src="assets/js/script.js"></script>
-    <script src="/assets/js/questions.js"></script>
+    <script src="/assets/js/questions.js" type="module"></script>
 </body>
 </main>
 </html>
