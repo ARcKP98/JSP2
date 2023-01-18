@@ -137,6 +137,16 @@ margin: 9px;
   border: 3px solid black;
   cursor: pointer;
 }
+.correct-ans {
+  background-color: green;
+  color: #f5efed;
+  text-align: center;
+}
+
+.incorrect-ans {
+  background-color: red;
+  color: #041520;
+}
 .game-box-welcome i {
   cursor: pointer;
 }
@@ -167,7 +177,7 @@ margin: 9px;
   display: flex;
   margin-top: 3rem;
 }
-.point-value, .correct-ans, .incorrect-ans {
+.point-value, .correct-questions, .incorrect-questions {
   display: flex;
   justify-content: flex-start;
   padding: 6px;
