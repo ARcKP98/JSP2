@@ -33,7 +33,7 @@ const easyQuestions = [
     },
     {
         question : 'Who is not considered an Avenger in the MCU?',
-        1 : 'SpiderMan',
+        1 : 'Spider-Man',
         2 : 'Black Widow', 
         3 : 'Black Panther',
         4 : 'Hulk', 
@@ -56,12 +56,12 @@ const easyQuestions = [
         correct : 'The Chitauri'
     },
     {
-        question : 'Which movie started the Marvel Cinematic universe?',
-        1 : 'The Avengers',
-        2 : 'Captain America: The First Avenger', 
-        3 : 'Thor',
-        4 : 'Iron Man', 
-        correct : 'Iron Man'
+        question : 'Which character was introduced for the first time in Captain America: Civil War?',
+        1 : 'Hulk',
+        2 : 'Batroc', 
+        3 : 'Spider-Man',
+        4 : 'The Falcon', 
+        correct : ' Spider-Man'
     },
     {
         question : "Who is Peter Quill's father",

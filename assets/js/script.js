@@ -13,15 +13,20 @@ const answerOption1 = document.getElementById("answer-btn1");
 const answerOption2 = document.getElementById("answer-btn2");
 const answerOption3 = document.getElementById("answer-btn3");
 const answerOption4 = document.getElementById("answer-btn4");
+let answerBtns = Array.from(document.getElementsByClassName('answer-button'))
 const nextButton = document.getElementById("next-btn");
-const pointsTracker = document.getElementById("points");
-const correctAnswer = document.getElementById("correct");
-const incorrectAnswer = document.getElementById("incorrect");
-const progressBar = document.getElementById("progress-bar-full");
 const resultBox = document.getElementById("result-section");
 const finalScore = document.getElementById("score");
 const retryButton = document.getElementById("retry-btn");
 const homeButton = document.getElementById("home-btn");
+
+let correctAnswer = 0; 
+let incorrectAnswer = 0; 
+let pointsTracker = 0; 
+let progressBar; 
+let shuffledQuestions = undefined; 
+let currentQuestion = undefined;
+
 
 //Toggling betwen the rules section and the home screen. 
 rulesButton.addEventListener('click', () => {
