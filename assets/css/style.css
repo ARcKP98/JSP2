@@ -131,7 +131,7 @@ margin: 9px;
 .hide {
   display: none;
 }
-.answer-button:hover {
+.answer-button-hover:hover {
   background-color: #CABB71;
   color: black;
   border: 3px solid black;
