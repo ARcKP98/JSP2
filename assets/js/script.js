@@ -21,8 +21,7 @@ const incorrect_score_keep = document.getElementById("incorrect");
 const progressBarFull = document.getElementById("progress-bar-full")
 const resultBox = document.getElementById("result-section");
 const finalScore = document.getElementById("score");
-const retryButton = document.getElementById("retry-btn");
-const homeButton = document.getElementById("home-btn");
+const retryButton = document.getElementById("play-again");
 const image = document.getElementById("img-result");
 
 let currentQuestion = {}
@@ -47,6 +46,13 @@ rulesBoxClose.addEventListener('click', () => {
     welcomeBox.classList.remove("hide"); 
     rulesBox.classList.add("hide");
     rulesButton.classList.remove("hide");
+})
+//Reloads all the information so everything resets
+retryButton.addEventListener('click', () => {
+    welcomeBox.classList.remove("hide"); 
+    rulesButton.classList.remove("hide");
+    resultBox.classList.add("hide");
+    window.location.reload();
 })
 
 //Easy level game
