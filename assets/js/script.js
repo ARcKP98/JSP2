@@ -18,6 +18,7 @@ const nextButton = document.getElementById("next-btn");
 const score_score_keep = document.getElementById("points")
 const correct_score_keep = document.getElementById("correct");
 const incorrect_score_keep = document.getElementById("incorrect");
+const progressBarFull = document.getElementById("progress-bar-full")
 const resultBox = document.getElementById("result-section");
 const finalScore = document.getElementById("score");
 const retryButton = document.getElementById("retry-btn");
@@ -73,6 +74,7 @@ function showNextQuestion() {
         }
     
     questionCounter++; 
+    progressBarFull.style.width = `${(questionCounter / maxQuestions) * 100}%`;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionIndex];
     if(currentQuestion === undefined){
