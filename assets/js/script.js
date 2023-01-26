@@ -75,6 +75,9 @@ function showNextQuestion() {
     questionCounter++; 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionIndex];
+    if(currentQuestion === undefined){
+        return
+    }
     questionSpace.innerText = currentQuestion.question;
     answerBtns.forEach(answer => {
         const number = answer.dataset["number"]
