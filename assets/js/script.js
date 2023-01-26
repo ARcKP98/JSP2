@@ -59,6 +59,11 @@ levelButton1.addEventListener('click', startGameEasy = () => {
 })
 
 function showNextQuestion() {
+    if(availableQuestions.length === 0 || questionCounter >= maxQuestions) {
+        mainGame.classList.add("hide");
+        resultBox.classList.remove("hide")
+        finalScore.innerText = score;
+    }
     
     questionCounter++; 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length)
