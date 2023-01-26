@@ -23,7 +23,7 @@ const homeButton = document.getElementById("home-btn");
 let currentQuestion = {}
 let acceptingAnswers = false; 
 let score = 0 
-let questionCounter = 0 
+let questionIndex = 0 
 let availableQuestions = []
 let correctAns = 0
 let incorrectAns = 0 
@@ -42,6 +42,18 @@ rulesBoxClose.addEventListener('click', () => {
     welcomeBox.classList.remove("hide"); 
     rulesBox.classList.add("hide");
     rulesButton.classList.remove("hide");
+})
+
+//Easy level game
+levelButton1.addEventListener('click', startGameEasy = () => {
+    questionCounter = 0; 
+    score = 0; 
+    welcomeBox.classList.add("hide")
+    mainGame.classList.remove("hide");
+    rulesButton.classList.add("hide");
+    availableQuestions = [...easyQuestions]
+    console.log(availableQuestions)
+    getNewQuestion()
 })
 
 
