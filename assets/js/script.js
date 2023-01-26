@@ -20,12 +20,16 @@ const finalScore = document.getElementById("score");
 const retryButton = document.getElementById("retry-btn");
 const homeButton = document.getElementById("home-btn");
 
-let correctAnswer = 0; 
-let incorrectAnswer = 0; 
-let pointsTracker = 0; 
-let progressBar; 
-let shuffledQuestions = undefined; 
-let currentQuestion = undefined;
+let currentQuestion = {}
+let acceptingAnswers = false; 
+let score = 0 
+let questionCounter = 0 
+let availableQuestions = []
+let correctAns = 0
+let incorrectAns = 0 
+correctQ = 1
+correctBonus = 10; 
+maxQuestions = 10; 
 
 
 //Toggling betwen the rules section and the home screen. 
