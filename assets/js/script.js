@@ -22,6 +22,7 @@ const resultBox = document.getElementById("result-section");
 const finalScore = document.getElementById("score");
 const retryButton = document.getElementById("retry-btn");
 const homeButton = document.getElementById("home-btn");
+let image = document.getElementById("img-result");
 
 let currentQuestion = {}
 let acceptingAnswers = false; 
@@ -63,7 +64,13 @@ function showNextQuestion() {
         mainGame.classList.add("hide");
         resultBox.classList.remove("hide")
         finalScore.innerText = score;
-    }
+        if(score <= 30 ){
+            image.src = "/assets/images/cap.webp";
+           } else if(score <= 60){
+            image.src = "/assets/images/hulk.webp"
+           }
+    
+        }
     
     questionCounter++; 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length)
@@ -78,6 +85,7 @@ function showNextQuestion() {
     checkAnswer();
     
 }
+
 function checkAnswer() {
 answerBtns.forEach(answer => {
     answer.addEventListener('click', e => {
