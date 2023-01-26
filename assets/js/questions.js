@@ -61,7 +61,7 @@ const easyQuestions = [
         2 : 'Batroc', 
         3 : 'Spider-Man',
         4 : 'The Falcon', 
-        correct : ' Spider-Man'
+        correct : 'Spider-Man'
     },
     {
         question : "Who is Peter Quill's father",
@@ -74,7 +74,7 @@ const easyQuestions = [
     {
         question : 'Who is the main villain in Thor:The Dark World?',
         1 : 'Loki',
-        2 : 'Captain America: The First Avenger', 
+        2 : 'Malekith', 
         3 : 'Gorr',
         4 : 'Eitri', 
         correct : 'Malekith'
