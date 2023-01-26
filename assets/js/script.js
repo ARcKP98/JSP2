@@ -23,7 +23,7 @@ const homeButton = document.getElementById("home-btn");
 let currentQuestion = {}
 let acceptingAnswers = false; 
 let score = 0 
-let questionIndex = 0 
+let questionCounter = 0 
 let availableQuestions = []
 let correctAns = 0
 let incorrectAns = 0 
@@ -53,8 +53,23 @@ levelButton1.addEventListener('click', startGameEasy = () => {
     rulesButton.classList.add("hide");
     availableQuestions = [...easyQuestions]
     console.log(availableQuestions)
-    getNewQuestion()
+    showNextQuestion()
 })
+
+function showNextQuestion () {
+    questionCounter++; 
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length)
+    currentQuestion = availableQuestions[questionIndex];
+    questionSpace.innerText = currentQuestion.question;
+    answerBtns.forEach(answer => {
+        const number = answer.dataset["number"]
+        answer.innerText = currentQuestion[number]
+    })
+    availableQuestions.splice(questionIndex, 1)
+    acceptingAnswers = true;
+    
+}
+
 
 
 
