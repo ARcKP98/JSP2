@@ -59,6 +59,26 @@ levelButton1.addEventListener('click', startGameEasy = () => {
     availableQuestions = [...easyQuestions]
     showNextQuestion()
 })
+//Medium level game
+levelButton2.addEventListener('click', startGameMedium = () => {
+    questionCounter = 0; 
+    score = 0; 
+    welcomeBox.classList.add("hide")
+    mainGame.classList.remove("hide");
+    rulesButton.classList.add("hide");
+    availableQuestions = [...mediumQuestions]
+    showNextQuestion()
+})
+//Hard level game
+levelButton3.addEventListener('click', startGameHard = () => {
+    questionCounter = 0; 
+    score = 0; 
+    welcomeBox.classList.add("hide")
+    mainGame.classList.remove("hide");
+    rulesButton.classList.add("hide");
+    availableQuestions = [...hardQuestions]
+    showNextQuestion()
+})
 
 function showNextQuestion() {
     if(availableQuestions.length === 0 || questionCounter >= maxQuestions) {
