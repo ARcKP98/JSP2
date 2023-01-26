@@ -86,10 +86,6 @@ em {
   box-shadow: 2px;
   border: 2px solid black;
 }
-#sound-level {
-  display: flex;
-  justify-content: flex-end;
-}
 .rules-modal {
   background-color: #0d3751;
   margin: 0 auto;
