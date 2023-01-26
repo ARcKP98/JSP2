@@ -23,7 +23,7 @@ const resultBox = document.getElementById("result-section");
 const finalScore = document.getElementById("score");
 const retryButton = document.getElementById("retry-btn");
 const homeButton = document.getElementById("home-btn");
-let image = document.getElementById("img-result");
+const image = document.getElementById("img-result");
 
 let currentQuestion = {}
 let acceptingAnswers = false; 
@@ -66,9 +66,11 @@ function showNextQuestion() {
         resultBox.classList.remove("hide")
         finalScore.innerText = score;
         if(score <= 30 ){
-            image.src = "/assets/images/cap.webp";
-           } else if(score <= 60){
             image.src = "/assets/images/hulk.webp"
+            image.alt = "Picture of Hulk"
+           } else if(score <= 60){
+            image.src = "/assets/images/cap.webp";
+            image.alt = "Picture of Captain America"
            }
     
         }
