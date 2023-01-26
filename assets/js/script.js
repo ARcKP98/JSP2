@@ -109,7 +109,7 @@ answerBtns.forEach(answer => {
             selectedOption.classList.remove(classToApply);
             
             showNextQuestion();
-         
+            resetQstate();
         }, 1000) 
     
     })
@@ -127,4 +127,15 @@ incrementQuestionWrong = num => {
             incorrectAns += num;
             incorrect_score_keep.innerText = incorrectAns;
             }
+}
+
+function resetQstate() {
+    answerOption1.classList.remove('correct-ans');
+    answerOption2.classList.remove('correct-ans');
+    answerOption3.classList.remove('correct-ans');
+    answerOption4.classList.remove('correct-ans');
+    answerOption1.classList.add("answer-button-hover")
+    answerOption2.classList.add("answer-button-hover")
+    answerOption3.classList.add("answer-button-hover")
+    answerOption4.classList.add("answer-button-hover")
 }
