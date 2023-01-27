@@ -57,12 +57,12 @@ em {
   color: #f5efed;
   background-color: #CABB71;
   border: 2px solid black;
+  box-shadow: 3px 3px;
   cursor: pointer;
 }
 
 .level-btn:active {
   background-color: #98CE00;
-  box-shadow: 2px;
   border: 2px solid black;
 } /*optional code*/
 
@@ -78,12 +78,12 @@ em {
   color: #f5efed;
   background-color: #CABB71;
   border: 2px solid black;
+  box-shadow: 3px 3px;
   cursor: pointer;
 }
 
 .rules-btn:active {
   background-color: #98CE00;
-  box-shadow: 2px;
   border: 2px solid black;
 }
 .rules-modal {
@@ -146,9 +146,6 @@ margin: 9px;
 .incorrect-ans {
   background-color: red;
   color: #041520;
-}
-.game-box-welcome i {
-  cursor: pointer;
 }
 .next {
   background-color: #041520;
@@ -219,17 +216,17 @@ margin: 9px;
 .retry {
   display: flex;
   justify-content: flex-end;
-  gap: 10%;
 }
 
-.retry-btn, .home-btn{
+.retry-btn{
   padding: 20px;
   width: 30%;
   margin-top: 9px;
 }
-.retry-btn:hover, .home-btn:hover {
+.retry-btn:hover{
   background-color: #CABB71;
-  color: black;
+  color: white;
   border: 2px solid black;
+  box-shadow: 3px 3px;
   cursor: pointer;
 }
