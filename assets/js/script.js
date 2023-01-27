@@ -152,12 +152,13 @@ answerBtns.forEach(answer => {
         }
      
         selectedOption.classList.add(classToApply)
+    
         setTimeout(() => {
             selectedOption.classList.remove(classToApply);
             
             showNextQuestion();
             resetQstate();
-        }, 1000) 
+        }, 2500) 
     
     })
 })
