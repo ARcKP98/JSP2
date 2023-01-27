@@ -14,7 +14,6 @@ const answerOption2 = document.getElementById("answer-btn2");
 const answerOption3 = document.getElementById("answer-btn3");
 const answerOption4 = document.getElementById("answer-btn4");
 let answerBtns = Array.from(document.getElementsByClassName('answer-button'))
-const nextButton = document.getElementById("next-btn");
 const score_score_keep = document.getElementById("points")
 const correct_score_keep = document.getElementById("correct");
 const incorrect_score_keep = document.getElementById("incorrect");
