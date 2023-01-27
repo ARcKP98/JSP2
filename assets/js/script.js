@@ -147,7 +147,7 @@ answerBtns.forEach(answer => {
             incrementQuestionCorrect(correctQ)
         } else {
             incrementQuestionWrong(correctQ)
-            incrementScore(--correctBonus)
+            incrementScore(-correctBonus)
         }
      
         selectedOption.classList.add(classToApply)
