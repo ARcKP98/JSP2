@@ -91,7 +91,6 @@ em {
   margin: 0 auto;
   border-radius: 6px;
   width: 90%;
-  height: 380px;
   max-height: 550px;
   padding: 5%;
 }
@@ -229,4 +228,11 @@ margin: 9px;
   border: 2px solid black;
   box-shadow: 3px 3px;
   cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .retry-btn{
+    width: 67%;
+  }
+  
 }
