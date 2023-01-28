@@ -164,7 +164,7 @@ const mediumQuestions = [
     }
 ]
 
-const hardQuestions = [
+const excelsiorQuestions = [
     {
         question : "How many cameos had stan lee made in Marvel movies?",
         1 : "22",
@@ -183,7 +183,7 @@ const hardQuestions = [
     },
     {
         question : "Who was the second person to create the super soldier serum?",
-        1 : "Abraham skine",
+        1 : "Abraham Erskine",
         2 : "Bruce Banner",
         3 : "Jonathan Schmidt",
         4 : "Wilfred Nagel",

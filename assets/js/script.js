@@ -2,7 +2,7 @@
 const welcomeBox = document.getElementById("game-box-welcome");
 const levelButton1 = document.getElementById("level-easy-btn");
 const levelButton2 = document.getElementById("level-medium-btn");
-const levelButton3 = document.getElementById("level-hard-btn");
+const levelButton3 = document.getElementById("level-excelsior-btn");
 const rulesBox = document.getElementById("rules-modal");
 const rulesButton = document.getElementById("rules-btn");
 const rulesBoxClose = document.getElementById("close-rules-btn")
@@ -75,13 +75,13 @@ levelButton2.addEventListener('click', startGameMedium = () => {
     showNextQuestion()
 })
 //Hard level game
-levelButton3.addEventListener('click', startGameHard = () => {
+levelButton3.addEventListener('click', startGameExcelsior = () => {
     questionCounter = 0; 
     score = 0; 
     welcomeBox.classList.add("hide")
     mainGame.classList.remove("hide");
     rulesButton.classList.add("hide");
-    availableQuestions = [...hardQuestions]
+    availableQuestions = [...excelsiorQuestions]
     showNextQuestion()
 })
 
