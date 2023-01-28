@@ -21,7 +21,7 @@ The Marvelous quiz is a fun and easy to play quiz that tests users knowledge abo
   * [Colour Scheme](#colour-scheme)
   * [Typography](#typography)
   * [Imagery](#imagery)
-  <!-- * [Wireframes](#wireframes) -->
+  * [Wireframes](#wireframes)
 
 * [Features](#features)
   * [General Features](#general-features)
@@ -84,16 +84,60 @@ The quiz has three images that appear at the end of the quiz. All images are cre
 
 ![Picture of Stan Lee used in the game.](/assets/images/stanl.webp)
 </details>
+<br>
 <details>
     <summary>Picture 2</summary>
     
 ![Picture of Captain America used in the game.](/assets/images/cap.webp)
 </details>
+<br>
 <details>
     <summary>Picture 3</summary>
     
 ![Picture of Hulk used in the game.](/assets/images/hulk.webp)
 </details>
+<br>
+
+### Wireframes 
+<details>
+    <summary>Wireframe 1: Welcome and Rules section(Desktop)</summary>
+    
+![Wireframe of the welcome and rules section created using Balsamiq](/readme-images/wireframe/welcome-page.png)
+![Wireframe of the welcome and rules section created using Balsamiq](/readme-images/wireframe/rules-screen.png)
+</details>
+<br>
+<details>
+    <summary>Wireframe 2: The Game section(Desktop)</summary>
+    
+![Wireframe of the game section created using Balsamiq](/readme-images/wireframe/game-page.png)
+</details>
+<br>
+<details>
+    <summary>Wireframe 3: The Results section(Desktop)</summary>
+    
+![Wireframe of the results section created using Balsamiq](/readme-images/wireframe/results-screen.png)
+</details>
+<br>
+<details>
+    <summary>Wireframe 4: Welcome and Rules section(Mobile)</summary>
+    
+![Wireframe of the results section created using Balsamiq](/readme-images/wireframe/welcome-page-mobile.png)
+![Wireframe of the results section created using Balsamiq](/readme-images/wireframe/rules-screen-mobile.png)
+</details>
+<br>
+<details>
+    <summary>Wireframe 5: The Game section(Mobile)</summary>
+    
+![Wireframe of the results section created using Balsamiq](/readme-images/wireframe/game-page-mobile.png)
+</details>
+<br>
+<details>
+    <summary>Wireframe 6: The Results section(Mobile)</summary>
+    
+![Wireframe of the results section created using Balsamiq](/readme-images/wireframe/results-screen-mobile.png)
+</details>
+<br>
+
 
 
 
