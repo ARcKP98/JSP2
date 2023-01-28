@@ -50,4 +50,24 @@ The Marvelous quiz is a fun and easy to play quiz that tests users knowledge abo
   * [Media](#media)
   * [Acknowledgments](#acknowledgments)
 ------
+## User Experience
+### Client Objective
+The MCU started in 2008 and ever since then has been growing rapidly. For context, the first 29 MCU movies have made 27.3 Billion Dollars worldwide making it the highest grossing franchise of all time ([source](https://www.investopedia.com/highest-grossing-movie-franchises-5085228#:~:text=The%20highest%2Dgrossing%20movie%20franchise,are%20both%20owned%20by%20Disney.)). The aim of this website is to allow users to play an interactive quiz about the well known Marvel Cinematic universe(MCU). The site is a fun alternative to test your knowledge and learn about the Marvel Universe. To test their knowledge about this franchise, the quiz should provide enough questions that test users on as many topics as possible, making it a **fun** yet **challenging** quiz. 
+
+### User Stories
+New User
+* I want to play this quiz to test my knowledge reagrding the MCU. 
+* I want to see how I am performing as I play.
+* I want the instructions to be clear and gameplay to be smooth. 
+* I want to see the right answer highlighted if I answer wrong. 
+
+Returning User 
+* I want to play this game at different levels.
+* I want the questions to be in a random order. 
+* I want the game to be responsive on multiple devices.
+
+
+
+
+
 
