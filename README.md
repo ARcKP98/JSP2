@@ -66,6 +66,34 @@ Returning User
 * I want the questions to be in a random order. 
 * I want the game to be responsive on multiple devices.
 
+## Design 
+### Colour scheme 
+The colour pallete was created using [Coolors](https://coolors.co/).
+![Colour scheme for the quiz](/readme-images/mcu-quiz-colour-scheme.png)
+
+### Typography 
+All the fonts for the project were sourced from [Google Fonts](https://fonts.google.com/).
+The headings in this project use the font **Aldrich**. 
+The body elements use the font **Scada**. 
+The back up font is **Sans-serif**. The font combination was generated using [Font-joy](https://fontjoy.com/). 
+
+### Imagery 
+The quiz has three images that appear at the end of the quiz. All images are credited in the [Media](#media) section of this file. 
+<details>
+    <summary>Picture 1</summary>
+
+![Picture of Stan Lee used in the game.](/assets/images/stanl.webp)
+</details>
+<details>
+    <summary>Picture 2</summary>
+    
+![Picture of Captain America used in the game.](/assets/images/cap.webp)
+</details>
+<details>
+    <summary>Picture 3</summary>
+    
+![Picture of Hulk used in the game.](/assets/images/hulk.webp)
+</details>
 
 
 
