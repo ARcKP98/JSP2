@@ -180,6 +180,26 @@ To ensure accesibility, the site is:
 * Having an alternative font as Sans-serif for users who might have difficulty with chosen fonts. 
 * The site was tested for vision deficiencies using the Rendering tool from Chrome DevTools by emulating various deficiencies. 
 
+## Technologies Used 
+### Languages Used
+* HTML 5 
+* CSS 3
+* JavaScript ES6
+
+### Libraries and Programs Used
+* Google fonts: Import fonts to the website
+* Gitpod: To edit code and READ.ME file along with storing pictures.
+* Github: To host the project using Github pages and to store the project repository. 
+* Git: To control versions of the website. 
+* [Toppng](https://toppng.com/free-image/comic-captain-america-PNG-free-PNG-Images_76911), [PNGItem](https://www.pngitem.com/middle/JRhboT_cartoon-characters-green-colour-hd-png-download/), and [Yahoo](https://sports.yahoo.com/stan-lee-documentary-coming-disney-221840285.html?guce_referrer=aHR0cHM6Ly9sZW5zLmdvb2dsZS5jb20v&guce_referrer_sig=AQAAAFgRHu_7ClKSfR6RsdL0c1-_wsDqsvOnP6qM0zSloEifMPZBwF7gXHMVeIJiJVWH8Y8cWze_sVkrVaaIlB2hkQ8Jbg3B_zWn-wr5sT5Y_mEVpBADIXWeLo7vP-JCj48y4xgMx1FWEQrwUhx-ERRlhw7aCEhuPTHqYPdJYxNdaRid&guccounter=2) For images used in the quiz. 
+* [Responsive design checker](https://responsivedesignchecker.com/)
+* Font Awesome: For different social media icons.
+* Coolors: To generate a colour palette for the website. 
+* Google DevTools: To test changes to the website along with responsiveness. Also used to measure colour contrast and to emulate vision deficiency. 
+* Am I Responsive: Viewing website on different devices.
+* [BIRME](https://www.birme.net/?): To resize images and convert to WebP
+* Balsamiq: Creating a Wireframe. 
+<br>
 
 
 
