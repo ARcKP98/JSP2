@@ -91,10 +91,10 @@ function showNextQuestion() {
         resultBox.classList.remove("hide")
         finalScore.innerText = score;
         if(score <= 30 ){
-            image.src = "/assets/images/hulk.webp"
+            image.src = "assets/images/hulk.webp"
             image.alt = "Picture of Hulk"
            } else if(score <= 60){
-            image.src = "/assets/images/cap.webp";
+            image.src = "assets/images/cap.webp";
             image.alt = "Picture of Captain America"
            }
     
