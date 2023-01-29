@@ -138,6 +138,47 @@ The quiz has three images that appear at the end of the quiz. All images are cre
 </details>
 <br>
 
+## Features 
+### General Features 
+The website is made up of 4 sections. Each section has the following features: 
+A Favicon that appears on the browser tab. 
+![Favicon](/readme-images/favicon-view.png)
+<br>
+
+The main heading and sub-heading. 
+![Headings that appear in all sections.](/readme-images/main-headings.png)
+All sections of this website are responsive, more about this in [Testing](#testing) section. 
+
+The website starts with a **Welcome menu** where the user can start playing immediately by picking a difficulty level. There are three difficulty levels: Easy, Medium, and Excelsior(Hard). The term Excelsior was chosen instead of hard because it is a common phrase used by the creator of Marvel Comics, Stan Lee. 
+![Screenshot of the welcome menu on different devices](/readme-images/welcome-section.png)
+<br>
+
+If the user would like some clarity regarding how the game works, they can refer to the **Rules** section. 
+![Screenshot of the rules section on different devices](/readme-images/rules-section.png)
+<br>
+
+After selecting a difficulty, the user is taken to the **Game section**. The user can then start playing by selecting the answers as they appear. Here, the user can check their performance by looking at the points they have scored, the number of correct/incorrect questions they have answered, and a progress bar to see how far they are in the quiz. 
+![Screenshot of the game section on different devices](/readme-images/game-section.png)
+<br>
+
+Once the user is done with answering all the questions, they are taken to the **Result section** where they can check their score. The image underneath the score changes according to the score the user gets out of 100. If the score is ≥ 30, there will be a picture of the Hulk. If the score is ≥ 60, there will be a picture of Captain America. If the score is ≥ 70, there will be a picture of Stan Lee. Here the player can choose to play again by pressing the play again button which will take them to the home screen where they can try a different level. 
+![Screenshot of the results section on different devices](/readme-images/results-section.png)
+<br>
+
+### Future Implementations
+I would like to add more functionality and features to the website to improve the user experience by including:
+* Add a timer. Adding the timer could add a sense of urgency where the user would have to think fast to answer the question before runnig out of time. 
+* Add background music. The user can choose whether or not they want to play the quiz with the theme song of the MCU. This could make the quiz more entertaining. 
+* Add a character wiki using an API. An API could be used to pull information about various Marvel characters which can be displayed in a seperate section of the website. The user can then choose to read more about certain characters of their choice. 
+* Save high scores. Although this is supposed to be a fun super casual game, adding this functioanlity can allow multiple users to play on the same device and save their scores locally for comparison or individuals could just save their scores to measure their performance. 
+
+### Accessibility
+To ensure accesibility, the site is: 
+* The colour contrast meets the minimum requirement since the rating is AA. 
+* Aria-label were used where required to make the website screen-reader friendly.
+* Using semantic HTML.
+* Having an alternative font as Sans-serif for users who might have difficulty with chosen fonts. 
+* The site was tested for vision deficiencies using the Rendering tool from Chrome DevTools by emulating various deficiencies. 
 
 
 
