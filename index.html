@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--meta tags-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="A quiz about the Marvel Cinematic Universe to test your knowledge.">
+    <meta name="description" content="A quiz about the Marvel Cinematic Universe to test your knowledge.">
     <meta name="keywords" content="mcu, quiz, marvel cinematic universe, mcu quiz, test knowledge about mcu">
     <!--Links-->
-     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
 
     <title>The Marvelous Quiz</title>
 </head>
+
 <body>
     <h1>The Marvelous Quiz</h1>
     <h2>Welcome to the quiz that tests your knowledge about the <em>Marvel Cinematic Universe</em></h2>
     <br>
-    <section id = "game-box-welcome" class="game-box-welcome">
+    <section id="game-box-welcome" class="game-box-welcome">
         <div id="main-menu">
             <h3>Pick your difficulty to start the game</h3>
             <button id='level-easy-btn' class="level-btn" aria-label="easy difficulty button">Easy</button>
@@ -26,29 +27,35 @@
             <button id='level-excelsior-btn' class="level-btn" aria-label="hard difficulty button">Excelsior</button>
         </div>
     </section>
-    <section id = "rules-modal" class="rules-modal hide">
+    <section id="rules-modal" class="rules-modal hide">
         <div>
             <h3>Here are the Rules:</h3>
         </div>
         <div>
             <ul>
-                <li>There are three difficulty levels: Easy, Medium, Hard. Each level has ten questions and only one answer is correct.</li>
+                <li>There are three difficulty levels: Easy, Medium, Hard. Each level has ten questions and only one
+                    answer is correct.</li>
                 <li>You get 10 points for every correct answer and you loose 10 points for every wrong answer.</li>
-                <li>The quiz contains questions reagrding the Marvel <i>Cinematic</i> universe, so when answering questions keep this in mind.</li>
+                <li>The quiz contains questions reagrding the Marvel <i>Cinematic</i> universe, so when answering
+                    questions keep this in mind.</li>
             </ul>
         </div>
         <button id="close-rules-btn" class="rules-btn" aria-label="Understood button">Understood</button>
     </section>
     <section class="question-area hide" id="question-box">
-        
+
         <div>
-            <h4 id = "question" class="question-text">A question should be here</h4>
+            <h4 id="question" class="question-text">A question should be here</h4>
         </div>
         <div id="answer-options">
-            <button id="answer-btn1" class="answer-button answer-button-hover" aria-label="answer option number 1" data-number="1">1</button>
-            <button id="answer-btn2" class="answer-button  answer-button-hover" aria-label="answer option number 2" data-number="2">2</button>
-            <button id="answer-btn3" class="answer-button  answer-button-hover" aria-label="answer option number 3" data-number="3">3</button>
-            <button id="answer-btn4" class="answer-button  answer-button-hover" aria-label="answer option number 4" data-number="4">4</button>
+            <button id="answer-btn1" class="answer-button answer-button-hover" aria-label="answer option number 1"
+                data-number="1">1</button>
+            <button id="answer-btn2" class="answer-button  answer-button-hover" aria-label="answer option number 2"
+                data-number="2">2</button>
+            <button id="answer-btn3" class="answer-button  answer-button-hover" aria-label="answer option number 3"
+                data-number="3">3</button>
+            <button id="answer-btn4" class="answer-button  answer-button-hover" aria-label="answer option number 4"
+                data-number="4">4</button>
         </div>
         <div class="score-keep">
             <div class="point-value">
@@ -90,4 +97,5 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/questions.js"></script>
 </body>
+
 </html>

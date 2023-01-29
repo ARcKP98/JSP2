@@ -24,15 +24,15 @@ const retryButton = document.getElementById("play-again");
 const image = document.getElementById("img-result");
 
 let currentQuestion = {}
-let acceptingAnswers = false; 
-let score = 0 
-let questionCounter = 0 
+let acceptingAnswers = false;
+let score = 0
+let questionCounter = 0
 let availableQuestions = []
 let correctAns = 0
-let incorrectAns = 0 
+let incorrectAns = 0
 correctQ = 1
-correctBonus = 10; 
-maxQuestions = 10; 
+correctBonus = 10;
+maxQuestions = 10;
 
 
 //Toggling betwen the rules section and the home screen. 
@@ -42,13 +42,13 @@ rulesButton.addEventListener('click', () => {
     rulesButton.classList.add("hide");
 });
 rulesBoxClose.addEventListener('click', () => {
-    welcomeBox.classList.remove("hide"); 
+    welcomeBox.classList.remove("hide");
     rulesBox.classList.add("hide");
     rulesButton.classList.remove("hide");
 })
 //Reloads all the information so everything resets
 retryButton.addEventListener('click', () => {
-    welcomeBox.classList.remove("hide"); 
+    welcomeBox.classList.remove("hide");
     rulesButton.classList.remove("hide");
     resultBox.classList.add("hide");
     window.location.reload();
@@ -56,8 +56,8 @@ retryButton.addEventListener('click', () => {
 
 //Easy level game
 levelButton1.addEventListener('click', startGameEasy = () => {
-    questionCounter = 0; 
-    score = 0; 
+    questionCounter = 0;
+    score = 0;
     welcomeBox.classList.add("hide")
     mainGame.classList.remove("hide");
     rulesButton.classList.add("hide");
@@ -66,8 +66,8 @@ levelButton1.addEventListener('click', startGameEasy = () => {
 })
 //Medium level game
 levelButton2.addEventListener('click', startGameMedium = () => {
-    questionCounter = 0; 
-    score = 0; 
+    questionCounter = 0;
+    score = 0;
     welcomeBox.classList.add("hide")
     mainGame.classList.remove("hide");
     rulesButton.classList.add("hide");
@@ -76,8 +76,8 @@ levelButton2.addEventListener('click', startGameMedium = () => {
 })
 //Hard level game
 levelButton3.addEventListener('click', startGameExcelsior = () => {
-    questionCounter = 0; 
-    score = 0; 
+    questionCounter = 0;
+    score = 0;
     welcomeBox.classList.add("hide")
     mainGame.classList.remove("hide");
     rulesButton.classList.add("hide");
@@ -86,25 +86,25 @@ levelButton3.addEventListener('click', startGameExcelsior = () => {
 })
 
 function showNextQuestion() {
-    if(availableQuestions.length === 0 || questionCounter >= maxQuestions) {
+    if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         mainGame.classList.add("hide");
         resultBox.classList.remove("hide")
         finalScore.innerText = score;
-        if(score <= 30 ){
+        if (score <= 30) {
             image.src = "assets/images/hulk.webp"
             image.alt = "Picture of Hulk"
-           } else if(score <= 60){
+        } else if (score <= 60) {
             image.src = "assets/images/cap.webp";
             image.alt = "Picture of Captain America"
-           }
-    
         }
-    
-    questionCounter++; 
+
+    }
+
+    questionCounter++;
     progressBarFull.style.width = `${(questionCounter / maxQuestions) * 100}%`;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionIndex];
-    if(currentQuestion === undefined){
+    if (currentQuestion === undefined) {
         return
     }
     questionSpace.innerText = currentQuestion.question;
@@ -115,65 +115,65 @@ function showNextQuestion() {
     availableQuestions.splice(questionIndex, 1)
     acceptingAnswers = true;
     checkAnswer();
-    
+
 }
 
 function checkAnswer() {
-answerBtns.forEach(answer => {
-    answer.addEventListener('click', e => {
-        if(!acceptingAnswers) return; 
-        acceptingAnswers = false;
-        const selectedOption = e.target
-        const selectedAnswer = selectedOption.innerText;
-     
-    
-        const classToApply = selectedAnswer == currentQuestion.correct ? "correct-ans" : "incorrect-ans";
-        answerOption1.classList.remove("answer-button-hover")
-        answerOption2.classList.remove("answer-button-hover")
-        answerOption3.classList.remove("answer-button-hover")
-        answerOption4.classList.remove("answer-button-hover")
-        if (answerOption1.innerText == currentQuestion.correct) {
-            answerOption1.classList.add('correct-ans');
-        } else if (answerOption2.innerText == currentQuestion.correct) {
-            answerOption2.classList.add('correct-ans');
-        } else if (answerOption3.innerText == currentQuestion.correct) {
-            answerOption3.classList.add('correct-ans');
-        } else if (answerOption4.innerText == currentQuestion.correct) {
-            answerOption4.classList.add('correct-ans');
-        }
+    answerBtns.forEach(answer => {
+        answer.addEventListener('click', e => {
+            if (!acceptingAnswers) return;
+            acceptingAnswers = false;
+            const selectedOption = e.target
+            const selectedAnswer = selectedOption.innerText;
 
-        if(classToApply == 'correct-ans') {
-            incrementScore(correctBonus);
-            incrementQuestionCorrect(correctQ)
-        } else {
-            incrementQuestionWrong(correctQ)
-            incrementScore(-correctBonus)
-        }
-     
-        selectedOption.classList.add(classToApply)
-    
-        setTimeout(() => {
-            selectedOption.classList.remove(classToApply);
-            
-            showNextQuestion();
-            resetQstate();
-        }, 2500) 
-    
+
+            const classToApply = selectedAnswer == currentQuestion.correct ? "correct-ans" : "incorrect-ans";
+            answerOption1.classList.remove("answer-button-hover")
+            answerOption2.classList.remove("answer-button-hover")
+            answerOption3.classList.remove("answer-button-hover")
+            answerOption4.classList.remove("answer-button-hover")
+            if (answerOption1.innerText == currentQuestion.correct) {
+                answerOption1.classList.add('correct-ans');
+            } else if (answerOption2.innerText == currentQuestion.correct) {
+                answerOption2.classList.add('correct-ans');
+            } else if (answerOption3.innerText == currentQuestion.correct) {
+                answerOption3.classList.add('correct-ans');
+            } else if (answerOption4.innerText == currentQuestion.correct) {
+                answerOption4.classList.add('correct-ans');
+            }
+
+            if (classToApply == 'correct-ans') {
+                incrementScore(correctBonus);
+                incrementQuestionCorrect(correctQ)
+            } else {
+                incrementQuestionWrong(correctQ)
+                incrementScore(-correctBonus)
+            }
+
+            selectedOption.classList.add(classToApply)
+
+            setTimeout(() => {
+                selectedOption.classList.remove(classToApply);
+
+                showNextQuestion();
+                resetQstate();
+            }, 2500)
+
+        })
     })
-})
 
-incrementScore = num => {
-    score += num;
-    score_score_keep.innerText = score;
+    incrementScore = num => {
+        score += num;
+        score_score_keep.innerText = score;
     }
-incrementQuestionCorrect = num => {
+    incrementQuestionCorrect = num => {
         correctAns += num;
         correct_score_keep.innerText = correctAns;
-        }
-incrementQuestionWrong = num => {
-            incorrectAns += num;
-            incorrect_score_keep.innerText = incorrectAns;
-            }
+    }
+    incrementQuestionWrong = num => {
+        incorrectAns += num;
+        incorrect_score_keep.innerText = incorrectAns;
+    }
 }
 
 function resetQstate() {
