@@ -79,7 +79,7 @@ const easyQuestions = [
         4: 'Eitri',
         correct: 'Malekith'
     }
-]
+];
 
 const mediumQuestions = [
     {
@@ -162,7 +162,7 @@ const mediumQuestions = [
         4: "4",
         correct: '3'
     }
-]
+];
 
 const excelsiorQuestions = [
     {
@@ -245,4 +245,4 @@ const excelsiorQuestions = [
         4: "Pluvians",
         correct: 'Flerken'
     },
-]
+];
