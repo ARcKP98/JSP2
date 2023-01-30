@@ -143,7 +143,7 @@ The quiz has three images that appear at the end of the quiz. All images are cre
 ## Features 
 ### General Features 
 The website is made up of 4 sections. Each section has the following features: 
-A Favicon that appears on the browser tab. 
+A Favicon logo that appears on the browser tab. 
 ![Favicon](/readme-images/favicon-view.png)
 <br>
 
@@ -324,6 +324,66 @@ The table shows the result for all the JS files used in this project.
 | ---|---|
 |script.js | Passed
 |questions.js | Passed
+
+## Deployment & Local Development 
+### Deployment 
+The website was deployed on Github pages using Github. Since the project was built using Gitpod, Git version control was used to commit changes and push them to Github project repository. To deploy the project: 
+1. Log in with your Github account or make one if you don't have one. 
+2. Find the repository: mcu_quiz
+3. Click the setting button that is on the menu bar. 
+4. Look for the code and automation menu and click the pages option. 
+5. Make sure  the source is set to **Deploy from a branch**. 
+6. Set the branch to **main** and set the folder next to it to **/(root)**. 
+7. Click save. After a couple of minutes, you should have a URL of the page at the beginning of the pages section. 
+<br>
+
+### Local Development  
+1. Log in with your Github account or make one if you don't have one. 
+2. Find the repository: mcu_quiz.
+3. Click on the **Code** button next to Gitpod. 
+4. Download the zip file and run extract it on your device. Now you can use it in your preffered code editor. 
+<br>
+
+As an alternative to downloading, you can fork or clone the project repository. 
+#### Fork
+1. Log in with your Github account or make one if you don't have one. 
+2. Find the repository: mcu_quiz.
+3. Click the Fork button on the top right corner. 
+<br>
+
+#### Clone 
+1. Log in with your Github account or make one if you don't have one. 
+2. Find the repository: mcu_quiz.
+3. Click the **Code** button next to the Gitpod button and **copy** the HTTPS link. 
+4. Open the terminal. 
+5. Make sure that the current directory is the one where you want the cloned repository to be. 
+6. Use the command ```git clone``` and paste the link. 
+7. Press Enter. Now the repository is cloned. 
+<br>
+
+## Credits 
+### Code Used
+* The Code Institute student template. [The Template](https://github.com/Code-Institute-Org/gitpod-full-template). 
+* [Youtube](https://www.youtube.com/watch?v=_LYxkClHnV0&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=5) videos from James Quick.
+* [Stack Overlflow](https://stackoverflow.com/questions/28977320/how-do-i-get-the-bullet-points-of-a-ul-to-center-with-the-text) which helped with aligning the bullet points. 
+<br>
+
+### Content 
+* All the content was written by @ARcKP98
+<br>
+
+### Media 
+* The image of Captain America was taken from [Toppng](https://toppng.com/free-image/comic-captain-america-PNG-free-PNG-Images_76911). 
+* The image of Hulk was taken from [PNGItem](https://www.pngitem.com/middle/JRhboT_cartoon-characters-green-colour-hd-png-download/). 
+* The image of Stan Lee was taken from [Yahoo](https://sports.yahoo.com/stan-lee-documentary-coming-disney-221840285.html?guce_referrer=aHR0cHM6Ly9sZW5zLmdvb2dsZS5jb20v&guce_referrer_sig=AQAAAFgRHu_7ClKSfR6RsdL0c1-_wsDqsvOnP6qM0zSloEifMPZBwF7gXHMVeIJiJVWH8Y8cWze_sVkrVaaIlB2hkQ8Jbg3B_zWn-wr5sT5Y_mEVpBADIXWeLo7vP-JCj48y4xgMx1FWEQrwUhx-ERRlhw7aCEhuPTHqYPdJYxNdaRid&guccounter=2). 
+* The logo for the website was created using [favicon](https://favicon.io/).
+<br>
+
+### Acknowledgments
+* Code Institute for their curriculum. 
+* Adegbenga Adeye, my CI mentor for feedback on the project.  
+* The tutor suport. 
+
 
 
 
