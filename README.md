@@ -34,9 +34,11 @@ The Marvelous quiz is a fun and easy to play quiz that tests users knowledge abo
 
 * [Testing](#testing)
   * [Responsive Testing](#responsive-testing)
+  * [Manual Testing](#manual-testing)
   * [Issues Discovered](#issues-discovered)
   * [Lighthouse Score](#lighthouse-testing)
   * [W3C Validation Score](#w3c-validation)
+  * [JSHint Score](#jshint-validation)
 
 * [Deployment & Local Development](#deployment--local-development)
   * [Deployment](#deployment)
@@ -192,7 +194,7 @@ To ensure accesibility, the site is:
 * Github: To host the project using Github pages and to store the project repository. 
 * Git: To control versions of the website. 
 * [Toppng](https://toppng.com/free-image/comic-captain-america-PNG-free-PNG-Images_76911), [PNGItem](https://www.pngitem.com/middle/JRhboT_cartoon-characters-green-colour-hd-png-download/), and [Yahoo](https://sports.yahoo.com/stan-lee-documentary-coming-disney-221840285.html?guce_referrer=aHR0cHM6Ly9sZW5zLmdvb2dsZS5jb20v&guce_referrer_sig=AQAAAFgRHu_7ClKSfR6RsdL0c1-_wsDqsvOnP6qM0zSloEifMPZBwF7gXHMVeIJiJVWH8Y8cWze_sVkrVaaIlB2hkQ8Jbg3B_zWn-wr5sT5Y_mEVpBADIXWeLo7vP-JCj48y4xgMx1FWEQrwUhx-ERRlhw7aCEhuPTHqYPdJYxNdaRid&guccounter=2) For images used in the quiz. 
-* [Responsive design checker](https://responsivedesignchecker.com/)
+* [Responsive Design Checker](https://responsivedesignchecker.com/)
 * Font Awesome: For different social media icons.
 * Coolors: To generate a colour palette for the website. 
 * Google DevTools: To test changes to the website along with responsiveness. Also used to measure colour contrast and to emulate vision deficiency. 
@@ -200,6 +202,130 @@ To ensure accesibility, the site is:
 * [BIRME](https://www.birme.net/?): To resize images and convert to WebP
 * Balsamiq: Creating a Wireframe. 
 <br>
+
+## Testing 
+### Responsive Testing 
+The website's responsivity was tested using ChromDev Tools and Responsive Design Checker by emulating devices of different sizes. The website was responsive on all major devices. 
+<details>
+    <summary>Example screenshots from Responsive Design Checker(Mobile, Monitor, and Tablet)</summary>
+    
+![Screenshot of a mobile emulation from  Responsive Design Checker](/readme-images/responsive-design-checker.png)
+![Screenshot of a monitor emulation from  Responsive Design Checker](/readme-images/responsive-design-checker-monitor.png)
+![Screenshot of a tablet emulation from  Responsive Design Checker](/readme-images/responsive-design-checker-tablet.png)
+</details>
+<br>
+Along with that, the website was manually tested using: 
+
+* Macbook air(2560x1600)
+* iPhone 11 (320x568)
+
+### User Goals Testing
+The table outlines first-time users goals and whether they were accomplished or not.
+| First-time User Goals| How was it addressed | Accomplished
+| ------ | --------- | -----------
+| I want to play this quiz to test my knowledge reagrding the MCU. | The quiz questions are relevant to the MCU. | Yes
+| I want to see how I am performing as I play.| The quiz has a score tracker that keeps track of the score long with the questions that were correct and incorrect. Users can also see how far along they are in the game by looking at the progress bar.| Yes
+| I want the instructions to be clear and gameplay to be smooth. | The webiste has a section where users can find the rules of the game and the physical user interaction during the game is kept to a minimum so the user can focus more on the question. The only time a user touches the screen is when they want to choose an answer. | Yes
+| I want to see the right answer highlighted if I answer wrong. | Upon answering the question, the user can check whether they got the answer correct or incorrect. If the user gives an incorrect answer, the correct answer is highlighted along with the answer they chose. In case the answer is correct, only their selected option is shown. | Yes 
+
+<br>
+
+The table outlines returning users goals and whether they were accomplished or not.
+| Returning User Goals| How was it addressed | Accomplished
+| ------ | --------- | -----------
+| I want to play this game at different levels. | The game offers three levels to play from, each with their own set of questions. | Yes
+| I want the questions to be in a random order.| The quiz questions are displayed in a random order everytime a user plays the game. | Yes
+|I want the game to be responsive on multiple devices. | The game site is responsive and can be played on various devices. | Yes
+<br>
+
+
+### Manual Testing
+
+The table below outlines tetsing done on different sections of the website. Testing done in order of flow of the site. 
+|Expectation| How was it tested| Result
+| -------- | ----------- | ---------------
+| The rules section can be displayed or hidden by pressing appropriate buttons.| By clicking the 'rules' button, the rules should be displayed and by pressing the 'Understood' button, the rules section should be closed. | The buttons work as intended when the user clicks them.
+| The level buttons should lead to the appropriate game questions. | By clicking all the game buttons to see if the questions shown are from a predetermined list of questions and of different difficulty. | The questions displayed are indeed in accordance with the pre determined questions when the user chooses a level. 
+| Users should have enough time between the current question and next question. | By playing the game and making sure the time gap is enough to review the current question. | The quiz has a good time lag between the current and next question. 
+| The questions are randomly presented to the user| By playing the game more than once at same level to see the order of the questions. | The questions are randomised for all levels when the user plays. 
+| The correct and incorrect answer is shown for the user to compare if the user gets the answer wrong. | By answering questions and checking if the correct and incorrect answer are highlighted. | The user is shown the incorrect and correct answer if they answer wrong upon clicking one of the answer options.
+| The result area is updated after answering each question. | By playing the quiz, the score, correct, and incorrect values should increase/decrease based on the answer. | The results are indeed updated depending on the answer when the user clicks one of the options they believe to be correct. 
+| The progress bar accurately represents the user's journey. | By looking at the progress bar as the game is played. The progress bar should fill based on the number of questions viewed. | The progress bar works since it shows an accurate representation of how many questions have been viewed by the user in terms of percentages as the user goes through the quiz. 
+| The result section should show the user's final score. | By playing the game and then checking the score. | The result section accurately shows the score that the user got in the game. 
+| The image in the result section should change based on user's score.| By playing the game and getting different scores based on score range to see if the image is updated. | The image indeed changes based on how the user scored.
+| The user should be able to play the game again if they wish to. | By checking if the play again button works. | The play again button when clicked, refreshes the user score and brings the user back to the main screen to play the game at the same or different level. 
+
+### Issues discovered
+|Bug|Solve|Discovered by
+|-----|---------|-----
+|Lack of Hover effect after the first round. | Add the hover element back in the reset function. | Me.
+| Images won't appear after the quiz in the deployed version. | Change the syntax for file source. | Me.
+| Text was moving out of the answer box. | Change the style for answer buttons by decreasing padding. | Me.
+| Same ID was accidently used twice. | Remove the unnecessary ID tag. | W3C validator.
+|  Box shadow effect was missing. | Change the values for the Box Shadow since it had the wrong value. | W3C validator.
+| Issues with displaying and updating question. | The code was missing a question index/counter to increase and update the questions. | Tutor support. 
+| Undefined variables were present. | Define the variables using let keyword to make the code more coherent and in-accordance with JS syntax. | JSHint. 
+| The reset function was not working properly since there were still highlights from previous question. | Change the position of the function call. | Me. 
+| The text was blue for answer options on iPhone. | Specify the color for all major elements. This was just an iOS issue. | Me.
+| Had issues with checking answer for check answer function. | It was an issue with the equality(not strict) and some answer options had an extra whitespace. | Me.
+| Elements were not being hidden properly. | Double check the style rule and assignment of that rule. | Me. 
+| Decrementing score by 1 point for every wrong answer was not very logical. | Changed the code and rule to ensure that 10 points were added/removed based on the answer. | Me.
+|Uncaught TypeError when displaying questions. | No errors in functionality but to solve this, an if statement was used to ensure that the variable question was defined. | DevTools. 
+| Uncaught TypeError for some buttons. | Ensure that the right element was targeted and changed the position in the script. | Me.
+| Heading elements were not sequential, affected accesibility. | Change from H3 to H2 for sub heading| W3C Validator. 
+
+<br>
+
+### Known Bugs 
+* On mobile phones, the hover effect stays on the option selected on the previous question. Its only registered as an answer if the user clicks on that option again. Due to time constratints it has not been addressed adequately. This occurence so far has been seen on the iPhone.
+* There is an error regarding the permission policy which is related to github pages and seems uncontrollable. 
+ <details>
+    <summary>Permission policy error</summary>
+
+    ![Screenshot of the unresolved error](/readme-images/unresolved-error.png)
+</details> 
+
+
+<br>
+
+### W3C Validation score 
+<details>
+    <summary>W3C HTML validation</summary>
+    
+![Verification for HTML code](/readme-images/w3c-html.png)
+</details>
+<br>
+<details>
+    <summary>W3C CSS validation</summary>
+    
+![Verification for CSS code](/readme-images/w3c-css.png)
+</details>
+<br>
+
+
+### Lighthouse Score
+<details>
+    <summary>Desktop</summary>
+    
+![Lighthouse score for desktopn](/readme-images/desktop-lighthouse.png)
+</details>
+<br>
+<details>
+    <summary>Mobile</summary>
+    
+![Lighthouse score for mobile](/readme-images/mobile-lighthouse.png)
+</details>
+<br>
+
+
+### JSHint Score
+The table shows the result for all the JS files used in this project. 
+| File name | Result
+| ---|---|
+|script.js | Passed
+|questions.js | Passed
+
+
 
 
 
