@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- Welcome section. The user can decide at which difficulty do they wish to play the quiz. -->
     <h1>The Marvelous Quiz</h1>
     <h2>Welcome to the quiz that tests your knowledge about the <em>Marvel Cinematic Universe</em></h2>
     <br>
@@ -27,6 +28,7 @@
             <button id='level-excelsior-btn' class="level-btn" aria-label="hard difficulty button">Excelsior</button>
         </div>
     </section>
+    <!-- Rules section. The user can refer to the rules of the game here. Hidden by default. -->
     <section id="rules-modal" class="rules-modal hide">
         <div>
             <h3>Here are the Rules:</h3>
@@ -46,6 +48,7 @@
         </div>
         <button id="close-rules-btn" class="rules-btn" aria-label="Understood button">Understood</button>
     </section>
+    <!-- Main quiz area. The quiz questions are shown here. Hidden by default. -->
     <section class="question-area hide" id="question-box">
 
         <div>
@@ -61,6 +64,7 @@
             <button id="answer-btn4" class="answer-button  answer-button-hover" aria-label="answer option number 4"
                 data-number="4">4</button>
         </div>
+        <!-- Tracks user progress during the game. -->
         <div class="score-keep">
             <div class="point-value">
                 <h4>Score:</h4>
@@ -79,6 +83,7 @@
             <div id="progress-bar-full"></div>
         </div>
     </section>
+    <!-- The results area. Hidden by default. -->
     <section id="result-section" class="result-box hide">
         <div class="finish-message">
             <h3>Congratulations on finishing the quiz!</h3>

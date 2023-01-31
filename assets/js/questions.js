@@ -1,3 +1,5 @@
+//Questions and answers for all the difficulty levels in the game. 
+//The script.js uses these to update the space in HTML
 const easyQuestions = [
     {
         question: 'Which movie started the Marvel Cinematic universe?',

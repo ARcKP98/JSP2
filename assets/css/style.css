@@ -1,12 +1,14 @@
+/* Imports Google fonts. */
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Scada&display=swap');
 
+/*Removes the web default styles. */
 * {
   margin: 0;
   padding: 0;
   border: none;
   box-sizing: border-box;
 }
-
+/* General styles for the website body. */
 body {
   background-color: #001F32;
   font-family: 'Scada', sans-serif;
@@ -36,16 +38,17 @@ em {
   color: #CABB71;
 }
 
+/* Style the welcome area container.  */
 .game-box-welcome {
   background-color: #0d3751;
   margin: 0 auto;
   border-radius: 6px;
   width: 90%;
-  /* height: 80vh; */
   max-height: 550px;
   padding: 5%;
 }
 
+/* Styles the difficulty buttons in the welcome area */
 .level-btn {
   display: block;
   margin: 20px auto;
@@ -67,7 +70,6 @@ em {
   background-color: #98CE00;
   border: 2px solid black;
 }
-
 
 .rules-btn {
   display: block;
@@ -91,6 +93,7 @@ em {
   border: 2px solid black;
 }
 
+/* style for the rules container and the elements within. */
 .rules-modal {
   background-color: #0d3751;
   margin: 0 auto;
@@ -111,6 +114,7 @@ em {
   list-style-position: inside;
 }
 
+/* Game area container. Styles for question and answer options.  */
 .question-area {
   background-color: #0d3751;
   margin: 0 auto;
@@ -140,6 +144,7 @@ em {
   margin: 9px;
 }
 
+/* Style rule that hides sections. Used in script.js to help with event listeners.*/
 .hide {
   display: none;
 }
@@ -151,6 +156,7 @@ em {
   cursor: pointer;
 }
 
+/* Style that is applied to correct/incorrect answers. */
 .correct-ans {
   background-color: green;
   color: #f5efed;
@@ -163,21 +169,7 @@ em {
   text-align: center;
 }
 
-.next {
-  background-color: #041520;
-  color: #f5efed;
-  display: block;
-  margin: 12px auto;
-  padding: 23px;
-  border-radius: 10px;
-}
-
-.next:hover {
-  background-color: #CABB71;
-  color: black;
-  cursor: pointer;
-}
-
+/* Style for the results area container and the elements within it. */
 .result-box {
   background-color: #0d3751;
   margin: 0 auto;
@@ -208,10 +200,10 @@ em {
   padding-left: 7px;
 }
 
+/* Style for the progress bar. The second one changes as the game progresses. */
 #progressBar {
   border: 0.3rem solid white;
   width: 100%;
-  /* height: 3.5vh; */
 }
 
 #progress-bar-full {
@@ -220,6 +212,7 @@ em {
   width: 0;
 }
 
+ /* Style for the image and image container shown in the results area. */
 .profile {
   border: 4px solid yellow;
   border-radius: 50%;
@@ -237,6 +230,7 @@ em {
   justify-content: center;
 }
 
+/* Final score shown in the results area. */
 .score-msg {
   display: flex;
   padding: 4px;
@@ -244,6 +238,7 @@ em {
   font-size: 23px;
 }
 
+/* Style for the play-again button. */
 .retry {
   display: flex;
   justify-content: center;
@@ -263,6 +258,7 @@ em {
   cursor: pointer;
 }
 
+/* Media query to make the retry button more responsive on mobile phones. */
 @media (min-width: 320px) and (max-width: 480px) {
   .retry-btn {
     width: 67%;
