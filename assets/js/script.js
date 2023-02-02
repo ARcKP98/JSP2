@@ -55,7 +55,8 @@ retryButton.addEventListener('click', () => {
 
 //Easy level game. Upon pressing the easy level button, the function startGameEasy is being run. 
 //The score and questionCounter are set to 0 and will be incremented as the game progresses. The available question
-// array contains all the easy array elements(questions) from questions.js.
+// array contains all the easy array elements(questions) from questions.js. The medium and excelsior(hard) level
+//follow similar structure except the availableQuestions are different.
 levelButton1.addEventListener('click',
     function startGameEasy() {
         questionCounter = 0;
@@ -68,9 +69,7 @@ levelButton1.addEventListener('click',
     }
 );
 
-//Medium level game. Upon pressing the easy level button, the function startGameMedium is being run. 
-//The score and questionCounter are set to 0 and will be incremented as the game progresses. The available question
-// array contains all the medium array elements(questions) from questions.js.
+
 levelButton2.addEventListener('click',
     function startGameMedium() {
         questionCounter = 0;
@@ -82,9 +81,7 @@ levelButton2.addEventListener('click',
         showNextQuestion();
     }
 );
-//Hard level game. Upon pressing the easy level button, the function startGameExcelsior is being run. 
-//The score and questionCounter are set to 0 and will be incremented as the game progresses. The available question
-// array contains all the excelsior array elements(questions) from questions.js.
+
 levelButton3.addEventListener('click',
     function startGameExcelsior() {
         questionCounter = 0;
